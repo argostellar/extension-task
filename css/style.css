@@ -1,3 +1,42 @@
 .hidden {
 	display: none;
 }
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	align-self: center;
+
+	margin: 0;
+	padding: 0;
+}
+
+.form-inner-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.form-item {
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+}
+
+.form-text {
+	margin: 0;
+	padding: 0;
+}
+
+.search-value {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+}
+
+.search-logo {
+	margin: 3px 5px;
+}

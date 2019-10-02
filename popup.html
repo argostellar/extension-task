@@ -2,13 +2,40 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Extension popup</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <p></p>
-    <div class="hidden">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <main class="main">
+        <h2 class="title">Поиск</h2>
+        <form id="search-form" action="https://yandex.ru/search/?text=">
+            <div class="form-inner-wrapper">
+                <div class="form-item">
+                	<p class="form-text">Текущий поисковик: <span class="search-value">Яндекс</span></p>
+                </div>
+                <div class="form-item">
+                    <select name="current-search-engine" id="search-select">
+                        <option value="yandex">Yandex</option>
+                        <option value="google">Google</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                	<img class="search-logo" src="img/yandex.png" width="16" height="16" alt="Текущий поисковик">
+                    <label>
+                        <input type="search" name="search" id="search-field" placeholder="Вы ищите?...">
+                    </label>
+                </div>
+            </div>
+        </form>
+        <div class="hidden">
+        	<div class="hidden">Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        	<a target="_blank" href="https://icons8.com/icons/set/google-logo">Google</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+        
+    </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
